@@ -6,6 +6,7 @@
 
 # Run with curl -sSL https://raw.githubusercontent.com/vykanand/cicd/main/jenkins.sh | bash
 
+#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
 
 if [[ $EUID -ne 0 ]]; then
 	echo "This script must be run as root" 1>&2
@@ -62,6 +63,8 @@ sudo chmod 755 /var/lib/jenkins/sample_database.yml
 sudo systemctl start jenkins
 
 sudo systemctl enable jenkins
+
+sudo service jenkins status
 
 cat <<EOT >> /var/lib/jenkins/sample_database.yml
 default: &default
