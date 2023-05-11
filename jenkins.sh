@@ -59,6 +59,10 @@ mysql --user=root --password=root -e \
 sudo touch /var/lib/jenkins/sample_database.yml
 sudo chmod 755 /var/lib/jenkins/sample_database.yml
 
+sudo systemctl start jenkins
+
+sudo systemctl enable jenkins
+
 cat <<EOT >> /var/lib/jenkins/sample_database.yml
 default: &default
   adapter: mysql2
