@@ -1,0 +1,8 @@
+[jenkins_server]
+54.235.15.83
+
+[k8s_manager]
+54.235.15.83
+
+[ansible_server]
+54.235.15.83
