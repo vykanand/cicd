@@ -14,6 +14,8 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 sudo ufw allow 8080/tcp
+sudo apt install -y nodejs npm
+
 # Install the necessary packages to prepare the environment
 sudo apt-get install -y autoconf bison build-essential libffi-dev libssl-dev
 sudo apt-get install -y libyaml-dev libreadline6 libreadline6-dev zlib1g zlib1g-dev curl git vim
