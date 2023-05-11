@@ -13,13 +13,13 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # Install the necessary packages to prepare the environment
-sudo apt-get install autoconf bison build-essential libffi-dev libssl-dev
-sudo apt-get install libyaml-dev libreadline6 libreadline6-dev zlib1g zlib1g-dev curl git vim
+sudo apt-get install -y autoconf bison build-essential libffi-dev libssl-dev
+sudo apt-get install -y libyaml-dev libreadline6 libreadline6-dev zlib1g zlib1g-dev curl git vim
 
 # Install PhantomJS (http://phantomjs.org/build.html)
 ## First install the necessary packages
-sudo apt-get install g++ flex gperf ruby perl libsqlite3-dev libfontconfig1-dev
-sudo apt-get install libicu-dev libfreetype6 libssl-dev libpng-dev libjpeg-dev
+sudo apt-get install -y g++ flex gperf ruby perl libsqlite3-dev libfontconfig1-dev
+sudo apt-get install -y libicu-dev libfreetype6 libssl-dev libpng-dev libjpeg-dev
 
 ## Then build PhantomJS
 cd /usr/local/share
@@ -37,11 +37,11 @@ sudo ln -sf /usr/local/share/phantomjs/bin/phantomjs /usr/local/bin
 wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
 sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
 sudo apt-get update
-sudo apt-get install jenkins
+sudo apt-get install -y jenkins
 
 # Install and Configure Mysql to Jenkins
 ## Install the necessary packages (I used password: root)
-sudo apt-get install mysql-client libmysqlclient-dev mysql-server
+sudo apt-get install -y mysql-client libmysqlclient-dev mysql-server
 
 ## Add user to jenkins
 ## You can check if user was created using: SELECT User FROM mysql.user;
