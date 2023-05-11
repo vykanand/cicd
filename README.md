@@ -10,6 +10,13 @@ These scripts simplify the process of setting up a Kubernetes cluster and make i
    
    Just wait for Successful Installation.
 
+Run with curl
+```
+curl -sSL https://raw.githubusercontent.com/vykanand/cicd/main/k8-master.sh | bash
+curl -sSL https://raw.githubusercontent.com/vykanand/cicd/main/ansible.sh | bash
+curl -sSL https://raw.githubusercontent.com/vykanand/cicd/main/jenkins.sh | bash
+curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash
+```
 
 ```bash
 

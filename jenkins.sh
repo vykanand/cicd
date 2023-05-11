@@ -4,7 +4,7 @@
 # This script must be run as root:
 #   $ sudo ./jenkins_install.sh
 
-# Run with curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash
+# Run with curl -sSL https://raw.githubusercontent.com/vykanand/cicd/main/jenkins.sh | bash
 
 
 if [[ $EUID -ne 0 ]]; then
