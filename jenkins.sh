@@ -12,6 +12,7 @@ if [[ $EUID -ne 0 ]]; then
 	exit 1
 fi
 
+sudo ufw allow 8080/tcp
 # Install the necessary packages to prepare the environment
 sudo apt-get install -y autoconf bison build-essential libffi-dev libssl-dev
 sudo apt-get install -y libyaml-dev libreadline6 libreadline6-dev zlib1g zlib1g-dev curl git vim
