@@ -14,6 +14,8 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 sudo ufw allow 8080/tcp
+curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+sudo apt-get install -y nodejs
 sudo apt install -y nodejs npm
 
 # Install the necessary packages to prepare the environment
