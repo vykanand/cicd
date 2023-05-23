@@ -5,6 +5,7 @@ sudo apt-get update
 sudo apt-get upgrade -y
 
 # Install Docker
-sudo apt-get install -y docker.io
+# sudo apt-get install -y docker.io
+curl https://releases.rancher.com/install-docker/20.10.sh | sh
 
-sudo docker run --privileged -d --restart=unless-stopped -p 80:80 -p 443:443 rancher/rancher
+docker run -d --restart=unless-stopped -p 999:8080 rancher/server:stable
