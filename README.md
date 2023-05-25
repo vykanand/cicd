@@ -13,10 +13,11 @@ These scripts simplify the process of setting up a Kubernetes cluster and make i
 Run with curl
 ```
 curl -sSL https://raw.githubusercontent.com/vykanand/cicd/main/docker.sh | bash
+curl -sSL https://raw.githubusercontent.com/vykanand/cicd/main/k8-master.sh | bash
+curl -sSL https://raw.githubusercontent.com/vykanand/cicd/main/k8-worker.sh | bash
 curl -sSL https://raw.githubusercontent.com/vykanand/cicd/main/ansible.sh | bash
 curl -sSL https://raw.githubusercontent.com/vykanand/cicd/main/jenkins.sh | bash
 curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash
-curl -sSL https://raw.githubusercontent.com/vykanand/cicd/main/k8-master.sh | bash
 curl -sSL https://raw.githubusercontent.com/vykanand/cicd/main/install-rancher.sh | bash
 curl -sSL https://raw.githubusercontent.com/vykanand/cicd/main/jenkins-dockered.sh | bash
 ```
