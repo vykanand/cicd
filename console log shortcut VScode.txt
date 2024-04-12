@@ -1,0 +1,15 @@
+console.log() Shortcut in VS Code🚀🚀
+👉 First of all -
+
+    Open VS Code.
+Press ctrl + shift + p.
+Choose snippets.
+Then choose your programming language.
+Then apply this code ✌️
+{
+    "Console.log": {
+        "prefix": "cc",
+            "body": "console.log('$1');",
+                "description": "Console Log"
+    }
+}
